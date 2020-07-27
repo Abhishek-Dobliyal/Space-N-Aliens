@@ -9,8 +9,9 @@ A casual space game developed using PyGame.
 
 ### For Windows
 ```bash
-pip install pygame ```
-
-### For MAC/ Linux
+pip install pygame
+```
+### For MAC/Linux
 ```bash
-pip3 install pygame``` 
+pip3 install pygame
+``` 
