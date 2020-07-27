@@ -24,6 +24,12 @@ pygame.display.set_icon(icon)
 clock = pygame.time.Clock()
 font = pygame.font.SysFont("monospace", 27, bold=True)  # Choosing Font
 
+# Background Music
+mixer.music.load('assets/background.wav')
+mixer.music.set_volume(0.5)
+mixer.music.play(-1)
+
+
 def screen_text(txt, color, x,y):
     ''' Function to Display text on window '''
     render = font.render(txt,True,color)
@@ -33,10 +39,6 @@ def welcome_screen():
     ''' Function to Display Welcome Screen '''
     display = False
     fps = 30
-
-    mixer.music.load('assets/background.wav')
-    mixer.music.set_volume(0.5)
-    mixer.music.play(-1)
 
     while not display:
         welcome_img = pygame.image.load('assets/welcome_bg.png').convert_alpha()
@@ -58,10 +60,6 @@ def instructions():
     ''' Function to Display Instructions Screen '''
     display = False
     fps = 30
-
-    mixer.music.load('assets/background.wav')
-    mixer.music.set_volume(0.5)
-    mixer.music.play(-1)
 
     while not display:
         welcome_img = pygame.image.load('assets/instructions.png').convert_alpha()
@@ -108,11 +106,6 @@ def game_loop():
 
     # Background
     background = pygame.image.load('assets/bg.png').convert_alpha()
-
-    # Background Music
-    mixer.music.load('assets/background.wav')
-    mixer.music.set_volume(0.5)
-    mixer.music.play(-1)
 
     # Meteors
     meteor_img = []
