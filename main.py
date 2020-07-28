@@ -25,9 +25,11 @@ clock = pygame.time.Clock()
 font = pygame.font.SysFont("monospace", 27, bold=True)  # Choosing Font
 
 # Background Music
-mixer.music.load('assets/background.wav')
-mixer.music.set_volume(0.5)
-mixer.music.play(-1)
+def play_music():
+    ''' Function to Play Background Music '''
+    mixer.music.load('assets/background.wav')
+    mixer.music.set_volume(0.5)
+    mixer.music.play(-1)
 
 
 def screen_text(txt, color, x,y):
@@ -39,6 +41,7 @@ def welcome_screen():
     ''' Function to Display Welcome Screen '''
     display = False
     fps = 30
+    play_music()
 
     while not display:
         welcome_img = pygame.image.load('assets/welcome_bg.png').convert_alpha()
@@ -116,6 +119,7 @@ def game_loop():
     num_of_meteors = 1
 
     fps = 30
+    play_music()
 
     def display_ship():
         ''' Display Ship '''
