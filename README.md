@@ -2,6 +2,8 @@
 
 A casual space game developed using PyGame.
 
+![DEMO](demo.gif)
+
 ## Installation and Dependencies
 
 -> Open CMD (Windows)/ Terminal (MAC/ Linux)
