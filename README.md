@@ -4,11 +4,10 @@ A casual space game developed using PyGame.
 
 ![DEMO](demo.gif)
 
-## Installation and Dependencies
+### Installation and Dependencies
 
--> Open CMD (Windows)/ Terminal (MAC/ Linux)
+- Navigate to the project directory through CMD/ Terminal and type in;
 
--> Type in
 
 ### For Windows
 ```bash
@@ -19,7 +18,7 @@ pip install pygame
 pip3 install pygame
 ``` 
 
-## Usage
+### Usage
 
 -> Navigate to the Game's Directory using Terminal/CMD, then type in:
 
@@ -32,6 +31,8 @@ python main.py
 python3 main.py
 ```
 
-## NOTE 
-Kindly do not delete any file/image in the assets folder (Keep the assets folder and the main file in the same directory). Hope you enjoy playing this:)
+### NOTE 
+- Kindly do not delete any file/image in the assets folder (Keep the assets folder and the main file in the same directory). 
+
+> Hope you enjoy your space ride :)
 
